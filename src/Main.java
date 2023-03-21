@@ -9,6 +9,14 @@ public class Main {
         // Skapa några objekt av dessa två klasser och lägg dem i en array
         // Skriv ut alla objekt i arrayens area
 
+        Shape[] shapes = {
+                new Circle(new Point(5, 7),5),
+                new Rectangle(new Point(12,3),4, 9),
+                new Rectangle(new Point(20,10),8, 12)
+        };
 
+        for (var shape : shapes) {
+            System.out.format("Area: %.2f%n", shape.area());
+        }
     }
 }
